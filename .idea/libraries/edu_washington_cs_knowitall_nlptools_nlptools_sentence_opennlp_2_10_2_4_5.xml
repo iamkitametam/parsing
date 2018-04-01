@@ -1,0 +1,36 @@
+<component name="libraryTable">
+  <library name="edu.washington.cs.knowitall.nlptools:nlptools-sentence-opennlp_2.10:2.4.5" type="repository">
+    <properties maven-id="edu.washington.cs.knowitall.nlptools:nlptools-sentence-opennlp_2.10:2.4.5" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LIB/nlptools-sentence-opennlp_2.10-2.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/scala-library-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/nlptools-core_2.10-2.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/common-scala_2.10-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/scopt_2.10-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/slf4j-api-1.7.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/dispatch-core_2.10-0.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/async-http-client-1.7.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-3.6.3.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/unfiltered-filter_2.10-0.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/unfiltered_2.10-0.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/commons-codec-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/unfiltered-jetty_2.10-0.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/unfiltered-util_2.10-0.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-webapp-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-xml-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-util-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-servlet-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-security-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-server-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/javax.servlet-2.5.0.v201103041518.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-continuation-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-http-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jetty-io-7.6.9.v20130131.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/opennlp-tools-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/opennlp-maxent-3.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/opennlp-sent-models-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

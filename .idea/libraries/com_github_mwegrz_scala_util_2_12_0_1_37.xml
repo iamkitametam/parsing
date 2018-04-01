@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="com.github.mwegrz:scala-util_2.12:0.1.37" type="repository">
+    <properties maven-id="com.github.mwegrz:scala-util_2.12:0.1.37" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LIB/scala-util_2.12-0.1.37.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/scala-library-2.12.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/log4j-over-slf4j-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jcl-over-slf4j-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/jul-to-slf4j-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/logback-classic-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/logback-core-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/akka-testkit_2.12-2.5.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/akka-actor_2.12-2.5.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/config-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/scala-java8-compat_2.12-0.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
