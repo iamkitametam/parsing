@@ -74,5 +74,24 @@
     <orderEntry type="library" exported="" name="edu.washington.cs.knowitall.nlptools:nlptools-sentence-opennlp_2.10:2.4.5" level="project" />
     <orderEntry type="library" exported="" name="com.github.mwegrz:scala-util_2.12:0.1.37" level="project" />
     <orderEntry type="library" exported="" name="me.xdrop:fuzzywuzzy:1.1.10" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../LIB/selenium-server-2.25.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="selenium-java-3.11" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../LIB/selenium-server-standalone-3.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

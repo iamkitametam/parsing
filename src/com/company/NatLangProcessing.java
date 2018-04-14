@@ -9,10 +9,10 @@ import java.util.regex.Pattern;
 
 public class NatLangProcessing {
 
-    public static String[] splitter(String text){
-        String[] answer = text.split("\\d\\.");
-        return answer;
-    }
+//    public static String[] splitter(String text){
+//        String[] answer = text.split("\\d\\.");
+//        return answer;
+//    }
 
     public static int experience(String text){
 
@@ -31,12 +31,11 @@ public class NatLangProcessing {
 
         //set default values for begin and end
 
-        int ind_begin = 0;
-        int ind_end = text1.length();
+        int ind_begin = 0, ind_end = text1.length();
 
         // begin regex matching
 
-        Pattern pattern = Pattern.compile(" [Сс]таж| [Оо]пыт");
+        Pattern pattern = Pattern.compile(" [СсCc]таж| [ОоOo]пыт");// (sic!) cyrillic and latin inside []
         Matcher matcher = pattern.matcher(text1);
         if(matcher.find()) {
             ind_begin = matcher.end();
@@ -52,9 +51,12 @@ public class NatLangProcessing {
 
         if(ind_begin !=0 && ind_end != text1.length()){
             Pattern pattern2 = Pattern.compile("\\d+");
-            Matcher matcher2 = pattern2.matcher(text1.substring(ind_begin,ind_end));
-            if(matcher2.find()){
-                experience =Integer.parseInt(matcher2.group());
+            if(ind_begin<=ind_end) {
+                Matcher matcher2 = pattern2.matcher(text1.substring(ind_begin, ind_end));
+                if (matcher2.find()) {
+                    experience = Integer.parseInt(matcher2.group());
+                } else
+                    experience = 0;
             }
         }
         return experience;
@@ -81,6 +83,7 @@ public class NatLangProcessing {
         }
         return tags_ok;
     }
+
 
 
 }

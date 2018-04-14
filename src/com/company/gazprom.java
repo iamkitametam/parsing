@@ -71,9 +71,6 @@ public class gazprom{
         // load taglist for parsing
 
         ArrayList<String> allTags = new ArrayList<>();
-        ArrayList<String> itTags = new ArrayList<>();
-        ArrayList<String> edTags = new ArrayList<>();
-        ArrayList<String> otherTags = new ArrayList<>();
         allTags = NatLangProcessing.readTagFile("d://IWTGAJ/java/info/IT.txt");
         allTags.addAll(NatLangProcessing.readTagFile("d://IWTGAJ/java/info/ED.txt"));
         allTags.addAll(NatLangProcessing.readTagFile("d://IWTGAJ/java/info/OTHER.txt"));
@@ -99,9 +96,15 @@ public class gazprom{
 
             // change splitting for semicolon
 
-            String[] answer = NatLangProcessing.splitter(responsibilities);
+//            String[] answer = NatLangProcessing.splitter(responsibilities);
+//            responsibilities = String.join(";",answer);
+//            answer = NatLangProcessing.splitter(requirements);
+//            requirements = String.join(";",answer);
+
+            String[] answer = responsibilities.split("\\d\\.");
             responsibilities = String.join(";",answer);
-            answer = NatLangProcessing.splitter(requirements);
+
+            answer = requirements.split("\\d\\.");
             requirements = String.join(";",answer);
 
             // parse for experience
@@ -116,11 +119,9 @@ public class gazprom{
                 tags = tags + s + ";";
             }
 
-            System.out.println("####################################################");
-            System.out.println(requirements);
-            System.out.println(a);
-//            System.out.println(b);
-//            System.out.println(c);
+//            System.out.println("####################################################");
+//            System.out.println(requirements);
+//            System.out.println(tags);
 
             // parse job-params inline class for region, job type
 
@@ -148,26 +149,26 @@ public class gazprom{
 
         // write to xlsx
 
-        String myfile = "d://IWTGAJ/java/database/gazprom.xls";
-        Workbook wb = new HSSFWorkbook();
-        org.apache.poi.ss.usermodel.Sheet sheet = wb.createSheet("sheet1");
-
-        for(int i=0;i<Vacancies.size();i++) {
-            Row row = ((org.apache.poi.ss.usermodel.Sheet) sheet).createRow(i);
-            row.createCell(0).setCellValue(Vacancies.get(i).url);
-            row.createCell(1).setCellValue(Vacancies.get(i).title);
-            row.createCell(2).setCellValue(Vacancies.get(i).employer);
-            row.createCell(3).setCellValue(Vacancies.get(i).location);
-            row.createCell(4).setCellValue(Vacancies.get(i).region);
-            row.createCell(5).setCellValue(Vacancies.get(i).jobType);
-            row.createCell(6).setCellValue(Vacancies.get(i).publicationDate);
-            row.createCell(7).setCellValue(Vacancies.get(i).requirements);
-            row.createCell(8).setCellValue(Vacancies.get(i).responsibilities);
-            row.createCell(9).setCellValue(Vacancies.get(i).tags);
-            row.createCell(10).setCellValue(Vacancies.get(i).experience);
-        }
-        wb.write(new FileOutputStream(myfile));
-        wb.close();
+//        String myfile = "d://IWTGAJ/java/database/gazprom.xls";
+//        Workbook wb = new HSSFWorkbook();
+//        org.apache.poi.ss.usermodel.Sheet sheet = wb.createSheet("sheet1");
+//
+//        for(int i=0;i<Vacancies.size();i++) {
+//            Row row = ((org.apache.poi.ss.usermodel.Sheet) sheet).createRow(i);
+//            row.createCell(0).setCellValue(Vacancies.get(i).url);
+//            row.createCell(1).setCellValue(Vacancies.get(i).title);
+//            row.createCell(2).setCellValue(Vacancies.get(i).employer);
+//            row.createCell(3).setCellValue(Vacancies.get(i).location);
+//            row.createCell(4).setCellValue(Vacancies.get(i).region);
+//            row.createCell(5).setCellValue(Vacancies.get(i).jobType);
+//            row.createCell(6).setCellValue(Vacancies.get(i).publicationDate);
+//            row.createCell(7).setCellValue(Vacancies.get(i).requirements);
+//            row.createCell(8).setCellValue(Vacancies.get(i).responsibilities);
+//            row.createCell(9).setCellValue(Vacancies.get(i).tags);
+//            row.createCell(10).setCellValue(Vacancies.get(i).experience);
+//        }
+//        wb.write(new FileOutputStream(myfile));
+//        wb.close();
 
         System.out.println("gazprom call finished at: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
 
