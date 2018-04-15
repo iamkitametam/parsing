@@ -143,7 +143,8 @@ public class gazprom{
 
             // create vacancy
 
-            Vacancy vac1 = new Vacancy(item.url, item.title, item.employer, item.location, region, jobType, item.publicationDate, requirements, responsibilities, experience, tags);
+            Vacancy vac1 = new Vacancy(item.url, item.title, item.employer, item.location, region, jobType,
+                    item.publicationDate, requirements, responsibilities, experience, tags,"","","");
             Vacancies.add(vac1);
         }
 
