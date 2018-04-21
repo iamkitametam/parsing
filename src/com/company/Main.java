@@ -22,6 +22,8 @@ public class Main{
         Vacancies = rosneft.call();
         save(Vacancies, "d://IWTGAJ/java/database/rosneft.xls");
 
+        Vacancies = novatek.call();
+        save(Vacancies, "d://IWTGAJ/java/database/novatek.xls");
     }
 
     public static void save(ArrayList<Vacancy> Vacancies, String myfile) throws IOException{
