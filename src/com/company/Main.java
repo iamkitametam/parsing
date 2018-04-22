@@ -13,17 +13,21 @@ public class Main{
 
         ArrayList<Vacancy> Vacancies = new ArrayList<>();
 
-        Vacancies = gazprom.call();
-        save(Vacancies,  "d://IWTGAJ/java/database/gazprom.xls");
+//        Vacancies = gazprom.call();
+//        save(Vacancies,  "d://IWTGAJ/java/database/gazprom.xls");
+//
+//        Vacancies = lukoil.call();
+//        save(Vacancies,"d://IWTGAJ/java/database/lukoil.xls");
+//
+//        Vacancies = rosneft.call();
+//        save(Vacancies, "d://IWTGAJ/java/database/rosneft.xls");
+//
+//        Vacancies = novatek.call();
+//        save(Vacancies, "d://IWTGAJ/java/database/novatek.xls");
 
-        Vacancies = lukoil.call();
-        save(Vacancies,"d://IWTGAJ/java/database/lukoil.xls");
+        Vacancies = sberbank.call();
+        save(Vacancies, "d://IWTGAJ/java/database/sberbank.xls");
 
-        Vacancies = rosneft.call();
-        save(Vacancies, "d://IWTGAJ/java/database/rosneft.xls");
-
-        Vacancies = novatek.call();
-        save(Vacancies, "d://IWTGAJ/java/database/novatek.xls");
     }
 
     public static void save(ArrayList<Vacancy> Vacancies, String myfile) throws IOException{
